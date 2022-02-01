@@ -1,0 +1,81 @@
+.navbar-container {
+  position: sticky;
+  top: 0;
+  background: var(--primary-color);
+  box-shadow: 12px 12px 20px 2px rgba(0, 0, 0, 0.2);
+  height: 4rem;
+}
+
+.navbar-container .navbar {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.navbar-container .navbar .links-container {
+  display: flex;
+}
+
+.navbar-container .navbar .links-container .link {
+  padding: 0.75rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.navbar-container .navbar .links-container .link:hover {
+  background: white;
+  color: var(--primary-color);
+}
+.navbar-container .navbar .navbar-header {
+  font-size: 2rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-content .component-drawer {
+  overflow: auto;
+  box-shadow: 40px 12px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-content .component-drawer ul {
+  overflow: auto;
+}
+
+.main-content .component-drawer .component-item {
+  margin: 0.5rem 0;
+}
+
+.main-content .component-drawer .component-drawer-header {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.main-content .component-drawer .component-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  transition: all 0.1s ease-in;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+.main-content .component-drawer .component-link:hover {
+  background-color: rgb(226, 226, 226);
+  color: var(--primary-color);
+}
+
+.main-content .content {
+  grid-column: 2 / span 4;
+}
