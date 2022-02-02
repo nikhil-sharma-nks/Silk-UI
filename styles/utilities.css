@@ -68,14 +68,16 @@
 .main-content .component-drawer .component-link {
   display: inline-block;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
   transition: all 0.1s ease-in;
   font-size: 1.25rem;
-  border-radius: 10px;
+  border-radius: 0 50px 50px 0;
 }
 .main-content .component-drawer .component-link:hover {
-  background-color: rgb(226, 226, 226);
-  color: var(--primary-color);
+  /* background-color: rgb(226, 226, 226);
+  color: var(--primary-color); */
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .main-content .content {
