@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Alert | Silk-UI</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="/components/alert.css" />
+  </head>
+  <body>
+    <nav class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <a href="/">Silk UI</a>
+        </div>
+        <div class="navigation-links">
+          <ul class="links-container">
+            <li class="link">Home</li>
+            <li class="link current-page">Documentation</li>
+            <li class="link">Installation</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content">
+      <aside class="component-drawer">
+        <div class="component-drawer-header py-3">Getting Started</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/">Introduction</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Installation</a>
+          </li>
+        </ul>
+        <div class="component-drawer-header py-3">Components</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/">Avatar</a>
+          </li>
+          <li class="component-item">
+            <a
+              class="component-link current-component"
+              href="/components/alert/alert.html"
+              >Alert</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Badge</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/button/button.html"
+              >Button</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Card</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Images</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Input</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Test Utilities</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Lists</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Navigation</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Modal</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Rating</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Toast</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Simplified Grid</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Navigation</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Slider</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="content">
+        <div class="component-heading">
+          <div class="h1" id="alert">
+            <a href="#alert">Alert</a>
+          </div>
+        </div>
+        <div class="component-description">
+          Provides contextual feedback messages for typical user action. It is
+          typically a short, important message which is to be conveyed to the
+          user in such a way that doesn't interrupt user work flow
+        </div>
+        <div class="h2 mt-5" id="simple_alert">
+          <a href="#simple_alert">Simple Alert Box</a>
+        </div>
+        <div class="regular-text-container">
+          A simple alert box just contain the text. An alert can have different
+          themes to present itself like a success, warning or error themed
+          alert.
+        </div>
+        <div class="example-container flex-col">
+          <div class="alert alert-success">
+            This is what a simple success alert looks like!
+          </div>
+          <div class="alert alert-error">
+            This is what a simple error alert looks like!
+          </div>
+          <div class="alert alert-warning">
+            This is what a simple warning alert looks like!
+          </div>
+          <div class="alert alert-primary">
+            This is what a simple primary alert looks like!
+          </div>
+          <div class="alert alert-secondary">
+            This is what a simple secondary alert looks like!
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520success%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520error%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520warning%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520primary%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520secondary%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 450px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="alert_icon">
+          <a href="#alert_icon"> Alert Box With Icon</a>
+        </div>
+        <div class="regular-text-container">
+          You can also make the alert more descriptive by using icons too! Just
+          place the icon inside the alert class.
+        </div>
+        <div class="example-container flex-col">
+          <div class="alert alert-success">
+            <i class="far fa-check-circle me-1"></i>
+            This is what a simple success alert with icon looks like!
+          </div>
+          <div class="alert alert-error">
+            <i class="fas fa-exclamation-triangle me-1"></i>
+            This is what a simple error alert with icon looks like!
+          </div>
+          <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle me-1"></i>
+            This is what a simple warning alert with icon looks like!
+          </div>
+          <div class="alert alert-primary">
+            <i class="fab fa-angellist me-1"></i>
+            This is what a simple primary alert with icon looks like!
+          </div>
+          <div class="alert alert-secondary">
+            <i class="fas fa-bolt me-1"></i>
+            This is what a simple secondary alert with icon looks like!
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520success%2520alert%2520with%2520icon%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520error%2520alert%2520with%2520icon%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520warning%2520alert%2520with%2520icon%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-angellist%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520primary%2520alert%2520with%2520icon%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bolt%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520This%2520is%2520what%2520a%2520simple%2520secondary%2520alert%2520with%2520icon%2520looks%2520like%21%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 580px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="outlined_alert">
+          <a href="#outlined_alert"> Outlined Alert Box</a>
+        </div>
+        <div class="regular-text-container">
+          An outlined alert box can be created just by appending outlined to
+          regualar alert class
+        </div>
+        <div class="example-container flex-col">
+          <div class="alert alert-success-outlined">
+            This is what an outlined success alert looks like!
+          </div>
+          <div class="alert alert-error-outlined">
+            This is what an outlined error alert looks like!
+          </div>
+          <div class="alert alert-warning-outlined">
+            This is what an outlined warning alert looks like!
+          </div>
+          <div class="alert alert-primary-outlined">
+            This is what an outlined primary alert looks like!
+          </div>
+          <div class="alert alert-secondary-outlined">
+            This is what an outlined secondary alert looks like!
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success-outlined%2522%253E%250A%2520%2520This%2520is%2520what%2520an%2520outlined%2520success%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-error-outlined%2522%253E%250A%2520%2520This%2520is%2520what%2520an%2520outlined%2520error%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning-outlined%2522%253E%250A%2520%2520This%2520is%2520what%2520an%2520outlined%2520warning%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary-outlined%2522%253E%250A%2520%2520This%2520is%2520what%2520an%2520outlined%2520primary%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary-outlined%2522%253E%250A%2520%2520This%2520is%2520what%2520an%2520outlined%2520secondary%2520alert%2520looks%2520like%21%250A%253C%252Fdiv%253E%250A"
+            style="
+              width: 100%;
+              height: 480px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="list-of-contents">
+        <span class="h3 mb-2">On This Page</span>
+        <ul class="content-list">
+          <li class="content-item"><a href="#alert">Alert</a></li>
+          <li class="content-item">
+            <a href="#simple_alert">Simple Alert Box</a>
+          </li>
+          <li class="content-item">
+            <a href="#alert_icon">Alert Box With Icon</a>
+          </li>
+          <li class="content-item">
+            <a href="#outlined_alert">Outlined Alert Box</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Made with ❤ by Nikhil <br /></p>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nikhil-sharma-nks/" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a href="https://github.com/nikhil-sharma-nks" target="_blank"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/wannabe_nikhil" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.facebook.com/nikhilshawarma/" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/nikhil.shawarma/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
