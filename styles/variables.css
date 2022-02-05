@@ -6,8 +6,14 @@
   --font-semi-bold: 600;
   --font-bold: 700;
   --font-black: 900;
-  /* background: #d3dedc; */
 
+  /* COLORS */
   --primary-color: #6886c5;
-  --secondary-color: red;
+  --secondary-color: rgb(100, 237, 255);
+  --success: #4e9f3d;
+  --error: #f05454;
+  --warning: #ff9f45;
+  --white: #fff;
+  --black: #212529;
+  --bg-grey: #eceae8;
 }
