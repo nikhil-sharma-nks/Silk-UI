@@ -59,6 +59,7 @@
 }
 
 .main-content .component-drawer .component-item {
+  font-weight: var(--font-light);
   margin: 0.5rem 0;
 }
 
@@ -147,6 +148,10 @@
 .flex-row {
   display: flex;
   align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .component-description {
@@ -178,5 +183,8 @@
   }
   .main-content {
     width: 80%;
+  }
+  .main-content .component-drawer {
+    padding: 1rem 1rem 1rem 0;
   }
 }
