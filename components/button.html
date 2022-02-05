@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Buttons | Silk-UI</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="/components/button.css" />
+  </head>
+  <body>
+    <nav class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <a href="/">Silk UI</a>
+        </div>
+        <div class="navigation-links">
+          <ul class="links-container">
+            <li class="link">Home</li>
+            <li class="link current-page">Documentation</li>
+            <li class="link">Installation</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content">
+      <aside class="component-drawer">
+        <div class="component-drawer-header py-3">Getting Started</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/">Introduction</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Installation</a>
+          </li>
+        </ul>
+        <div class="component-drawer-header py-3">Components</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/">Avatar</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/alert.html">Alert</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Badge</a>
+          </li>
+          <li class="component-item">
+            <a
+              class="component-link current-component"
+              href="/components/button.html"
+              >Button</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Card</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Images</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Input</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Test Utilities</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Lists</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Navigation</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Modal</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Rating</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Toast</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Simplified Grid</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Navigation</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/">Slider</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="content">
+        <div class="component-heading">
+          <div class="h1" id="buttons">
+            <a href="#buttons">Buttons</a>
+          </div>
+        </div>
+        <div class="component-description">
+          Use Silk-UI's custom button styles for actions in forms, dialogs, and
+          more with support for multiple sizes, states, and more.
+        </div>
+        <div class="h2 mt-5" id="simple_buttons">
+          <a href="#simple_buttons">Simple Buttons</a>
+        </div>
+        <div class="regular-text-container">
+          Silk-UI includes several predefined button styles, each serving its
+          own semantic purpose. With class "btn" along with varient class of
+          your choice you are good to go!
+        </div>
+        <div class="example-container flex-row">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-error">Error</button>
+          <button class="btn btn-warning">Warning</button>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error%2522%253EError%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E"
+            style="
+              width: 100%;
+              height: 195px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="outlined_buttons">
+          <a href="#outlined_buttons"> Outlined Buttons</a>
+        </div>
+        <div class="regular-text-container">
+          Sometimes we don't need the hefty background colors that a regular
+          button comes with. In that case append "-outline" class to any regular
+          button class to remove all background images and colors on any button.
+        </div>
+        <div class="example-container flex-row">
+          <button class="btn btn-primary-outlined">Primary</button>
+          <button class="btn btn-secondary-outlined">Secondary</button>
+          <button class="btn btn-success-outlined">Success</button>
+          <button class="btn btn-error-outlined">Error</button>
+          <button class="btn btn-warning-outlined">Warning</button>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outlined%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success-outlined%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error-outlined%2522%253EError%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning-outlined%2522%253EWarning%253C%252Fbutton%253E"
+            style="
+              width: 100%;
+              height: 195px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="buttons_with_icon">
+          <a href="#buttons_with_icon"> Buttons With Icon</a>
+        </div>
+        <div class="regular-text-container">
+          Sometimes to be more descriptive we need the help to icons. And hence
+          we took care of that too. Just use any icon of your choice with any
+          type of button. You can use this with normal, outlined, large butons.
+        </div>
+        <div class="example-container flex-row">
+          <button class="btn btn-primary">
+            <i class="fab fa-angellist me-1"></i> Primary
+          </button>
+          <button class="btn btn-secondary-outlined">
+            <i class="fas fa-bolt me-1"></i> Secondary
+          </button>
+          <button class="btn btn-success">
+            <i class="far fa-check-circle me-1"></i>Success
+          </button>
+          <button class="btn btn-error-outlined">
+            <i class="fas fa-exclamation-triangle me-1"></i>
+            Error
+          </button>
+          <button class="btn btn-warning">
+            <i class="fas fa-exclamation-triangle me-1"></i>
+            Warning
+          </button>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-angellist%2520me-1%2522%253E%253C%252Fi%253E%2520Primary%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outlined%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bolt%2520me-1%2522%253E%253C%252Fi%253E%2520Secondary%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2520me-1%2522%253E%253C%252Fi%253ESuccess%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error-outlined%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520Error%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520me-1%2522%253E%253C%252Fi%253E%250A%2520%2520Warning%250A%253C%252Fbutton%253E%250A"
+            style="
+              width: 100%;
+              height: 530px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="large_buttons">
+          <a href="#large_buttons"> Large Buttons</a>
+        </div>
+        <div class="regular-text-container">
+          Use btn-large with any kind of button to get a larger button!
+        </div>
+        <div class="example-container flex-row">
+          <button class="btn btn-primary btn-large">
+            <i class="fab fa-angellist mr-1"></i> Primary
+          </button>
+          <button class="btn btn-secondary-outlined btn-large">
+            <i class="fas fa-bolt mr-1"></i> Secondary
+          </button>
+          <button class="btn btn-success btn-large">
+            <i class="far fa-check-circle mr-1"></i>Success
+          </button>
+          <button class="btn btn-error-outlined btn-large">
+            <i class="fas fa-exclamation-triangle mr-1"></i>
+            Error
+          </button>
+          <button class="btn btn-warning btn-large">
+            <i class="fas fa-exclamation-triangle mr-1"></i>
+            Warning
+          </button>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-large%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fab%2520fa-angellist%2520mr-1%2522%253E%253C%252Fi%253E%2520Primary%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outlined%2520btn-large%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bolt%2520mr-1%2522%253E%253C%252Fi%253E%2520Secondary%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2520btn-large%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2520mr-1%2522%253E%253C%252Fi%253ESuccess%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error-outlined%2520btn-large%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520mr-1%2522%253E%253C%252Fi%253E%250A%2520%2520Error%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-large%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520mr-1%2522%253E%253C%252Fi%253E%250A%2520%2520Warning%250A%253C%252Fbutton%253E"
+            style="
+              width: 100%;
+              height: 500px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="list-of-contents">
+        <span class="h3 mb-2 pb-2">On This Page</span>
+        <ul class="content-list">
+          <li class="content-item"><a href="#buttons">Buttons</a></li>
+          <li class="content-item">
+            <a href="#simple_buttons">Simple Buttons</a>
+          </li>
+          <li class="content-item">
+            <a href="#outlined_buttons">Outlined Buttons</a>
+          </li>
+          <li class="content-item">
+            <a href="#buttons_with_icon">Buttons With Icon</a>
+          </li>
+          <li class="content-item">
+            <a href="#large_buttons">Large Buttons </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Made with ❤ by Nikhil <br /></p>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nikhil-sharma-nks/" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a href="https://github.com/nikhil-sharma-nks" target="_blank"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/wannabe_nikhil" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.facebook.com/nikhilshawarma/" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/nikhil.shawarma/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
