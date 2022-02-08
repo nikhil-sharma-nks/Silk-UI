@@ -106,27 +106,27 @@
   padding-top: 3rem !important;
 }
 
-.pe-0 {
+.pr-0 {
   padding-right: 0 !important;
 }
 
-.pe-1 {
+.pr-1 {
   padding-right: 0.25rem !important;
 }
 
-.pe-2 {
+.pr-2 {
   padding-right: 0.5rem !important;
 }
 
-.pe-3 {
+.pr-3 {
   padding-right: 1rem !important;
 }
 
-.pe-4 {
+.pr-4 {
   padding-right: 1.5rem !important;
 }
 
-.pe-5 {
+.pr-5 {
   padding-right: 3rem !important;
 }
 
@@ -154,26 +154,26 @@
   padding-bottom: 3rem !important;
 }
 
-.ps-0 {
+.pl-0 {
   padding-left: 0 !important;
 }
 
-.ps-1 {
+.pl-1 {
   padding-left: 0.25rem !important;
 }
 
-.ps-2 {
+.pl-2 {
   padding-left: 0.5rem !important;
 }
 
-.ps-3 {
+.pl-3 {
   padding-left: 1rem !important;
 }
 
-.ps-4 {
+.pl-4 {
   padding-left: 1.5rem !important;
 }
 
-.ps-5 {
+.pl-5 {
   padding-left: 3rem !important;
 }
