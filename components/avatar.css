@@ -1,0 +1,45 @@
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.avatar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.avatar-circular {
+  border-radius: 50%;
+}
+
+.avatar-xl {
+  font-size: 4rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.avatar-large {
+  width: 5rem;
+  height: 5rem;
+}
+
+.avatar-medium {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.avatar-small {
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+}
