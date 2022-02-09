@@ -1,0 +1,33 @@
+@import './avatar.css';
+
+.badge-container {
+  position: relative;
+}
+
+.badge-container .badge {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  border: 1px solid white;
+  bottom: 0;
+  left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-container .badge-online {
+  background-color: var(--success);
+}
+
+.badge-container .badge-offline {
+  background-color: var(--error);
+}
+
+.badge-icon {
+  top: 0;
+}
