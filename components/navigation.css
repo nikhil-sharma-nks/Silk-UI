@@ -1,0 +1,46 @@
+@import './button.css';
+@import './badge.css';
+@import './input.css';
+.navigationbar-container {
+  box-shadow: 12px 12px 20px 2px rgba(0, 0, 0, 0.2);
+  height: 4rem;
+  z-index: 2;
+  width: 100%;
+  background: var(--white);
+}
+
+.navigationbar-container .navbar {
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navigationbar-container .navbar .navbar-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigationbar-container .navbar .navbar-header .navigation-logo {
+  padding-right: 1rem;
+  height: 3rem;
+}
+
+.navigationbar-container .navigation-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.navigationbar-container .navigation-buttons .navigation-link:hover {
+  color: var(--primary-color);
+}
+
+#search_box {
+  width: 100%;
+}
