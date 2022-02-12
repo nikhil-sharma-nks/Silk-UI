@@ -29,5 +29,6 @@
 }
 
 .badge-icon {
-  top: 0;
+  top: -5px;
+  left: 14px !important;
 }
