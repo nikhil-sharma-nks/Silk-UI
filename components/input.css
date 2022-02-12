@@ -1,0 +1,63 @@
+@import './button.css';
+.form-group {
+  background: var(--white);
+  border: 1px solid var(--black);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-control {
+  display: block;
+  width: 30rem;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+}
+
+input:focus {
+  outline: none !important;
+
+  /* transition: ease-in-out, width 0.35s ease-in-out; */
+  border: 1px solid var(--primary-color);
+}
+
+.form-label {
+  display: block;
+  line-height: 140%;
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.feeback {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.feedback-success {
+  color: var(--success);
+}
+
+.feedback-warning {
+  color: var(--warning);
+}
+
+.feedback-error {
+  color: var(--error);
+}
+
+.input-success,
+.input-success:focus {
+  border-color: var(--success);
+}
+.input-warning,
+.input-warning:focus {
+  border-color: var(--warning);
+}
+.input-error,
+.input-error:focus {
+  border-color: var(--error);
+}

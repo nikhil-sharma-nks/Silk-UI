@@ -1,0 +1,24 @@
+.image-responsive {
+  max-width: 100%;
+  /* width: 15rem; */
+  height: fit-content;
+  width: fit-content;
+}
+
+.image-round {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.image-small {
+  width: 8rem;
+}
+
+.image-medium {
+  width: 12rem;
+}
+
+.image-large {
+  width: 16rem;
+}

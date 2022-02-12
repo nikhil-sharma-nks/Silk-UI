@@ -10,9 +10,9 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <title>Badge | Silk-UI</title>
+    <title>Image | Silk-UI</title>
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="/components/badge.css" />
+    <link rel="stylesheet" href="/components/image.css" />
   </head>
   <body>
     <nav class="navbar-container">
@@ -49,20 +49,19 @@
             <a class="component-link" href="/components/alert.html">Alert</a>
           </li>
           <li class="component-item">
-            <a
-              class="component-link current-component"
-              href="/components/avatar.html"
-              >Badge</a
-            >
+            <a class="component-link" href="/components/badge.html">Badge</a>
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/button.html">Button</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="./card.html">Card</a>
+            <a class="component-link" href="/components/card.html">Card</a>
           </li>
+
           <li class="component-item">
-            <a class="component-link" href="./image.html">Images</a>
+            <a class="component-link current-component" href="./image.html"
+              >Images</a
+            >
           </li>
           <li class="component-item">
             <a class="component-link" href="./input.html">Input</a>
@@ -98,48 +97,35 @@
       </aside>
       <section class="content">
         <div class="component-heading">
-          <div class="h1" id="badges">
-            <a href="#badges">Badges</a>
+          <div class="h1" id="image">
+            <a href="#image">Image</a>
           </div>
         </div>
         <div class="component-description">
-          Badges are simple and basic components that are used to display an
-          indicator or count a number.
+          Documentation and examples for opting images into responsive behavior
+          (so they never become wider than their parent)
         </div>
-        <div class="h2 mt-5" id="avatar_badges">
-          <a href="#avatar_badges">Avatar Badges</a>
+        <div class="h2 mt-5" id="responsive_image">
+          <a href="#responsive_image">Responsive Image</a>
         </div>
         <div class="regular-text-container">
-          Use avatars along with badges to display more details like count or
-          status like online or offline. Use only "badge" class to display
-          number as badge and use "badge-offline" and "badge-online" to display
-          status. You can use it with both regular rectangular and circular
-          avatar
+          To make your image responsive, add "image-responsive" class to your
+          image element. It will make your image responsive, will always take
+          dimensions of your container and will adjust according to it.
         </div>
         <div class="example-container flex-row">
-          <div class="badge-container">
-            <img class="avatar" src="../assets/avatar-01.jpg" />
-            <span class="badge">9</span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar avatar-circular" src="../assets/avatar-02.jpg" />
-            <span class="badge">4</span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar" src="../assets/avatar-03.jpg" />
-            <span class="badge badge-offline"></span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar avatar-circular" src="../assets/avatar-04.jpg" />
-            <span class="badge badge-online"></span>
-          </div>
+          <img
+            class="image-responsive"
+            src="../assets/responsive-image.jpg"
+            alt="responsive-image"
+          />
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fassets%252Favatar-01.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E9%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-circular%2522%2520src%253D%2522..%252Fassets%252Favatar-02.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fassets%252Favatar-03.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-circular%2522%2520src%253D%2522..%252Fassets%252Favatar-04.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520src%253D%2522..%252Fassets%252Fresponsive-image.jpg%2522%250A%2520%2520alt%253D%2522responsive-image%2522%250A%252F%253E"
             style="
               width: 100%;
-              height: 525px;
+              height: 200px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -148,33 +134,65 @@
           >
           </iframe>
         </div>
-
-        <div class="h2 mt-5" id="icon_badges">
-          <a href="#icon_badges">Icon Badges</a>
+        <div class="h2 mt-5" id="circular_image">
+          <a href="#circular_image"> Circular Image</a>
         </div>
         <div class="regular-text-container">
-          Use "badge-icon" class to display badges on icons!
+          To make your responsive image circular add "image-round" class to it.
         </div>
         <div class="example-container flex-row">
-          <div class="badge-container">
-            <i class="fas fa-envelope fa-3x"></i>
-            <span class="badge badge-icon">9</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-shopping-cart fa-3x"></i>
-            <span class="badge badge-icon">5</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-flag fa-3x"></i>
-            <span class="badge badge-icon">6</span>
-          </div>
+          <img
+            class="image-responsive image-round"
+            src="../assets/responsive-image.jpg"
+            alt="responsive-image"
+          />
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520fa-3x%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E9%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-3x%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E5%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-flag%2520fa-3x%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E6%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520class%253D%2522image-responsive%2520image-round%2522%250A%2520%2520src%253D%2522..%252Fassets%252Fresponsive-image.jpg%2522%250A%2520%2520alt%253D%2522responsive-image%2522%250A%252F%253E"
             style="
               width: 100%;
-              height: 372px;
+              height: 200px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="images_with_different_sizes">
+          <a href="#images_with_different_sizes"> Image With Different Size</a>
+        </div>
+        <div class="regular-text-container">
+          You can also have different sizes for your responsive images. use
+          "image-small", "image-medium", "image-large" to make them of a certain
+          size that they can be contained with. You can use it with circular
+          images as well.
+        </div>
+        <div class="example-container flex-row">
+          <img
+            class="image-responsive image-small"
+            src="../assets/responsive-image.jpg"
+            alt="responsive-image"
+          />
+          <img
+            class="image-responsive image-medium image-round"
+            src="../assets/responsive-image.jpg"
+            alt="responsive-image"
+          />
+          <img
+            class="image-responsive image-large"
+            src="../assets/responsive-image.jpg"
+            alt="responsive-image"
+          />
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520class%253D%2522image-responsive%2520image-small%2522%250A%2520%2520src%253D%2522..%252Fassets%252Fresponsive-image.jpg%2522%250A%2520%2520alt%253D%2522responsive-image%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522image-responsive%2520image-medium%2520image-round%2522%250A%2520%2520src%253D%2522..%252Fassets%252Fresponsive-image.jpg%2522%250A%2520%2520alt%253D%2522responsive-image%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522image-responsive%2520image-large%2522%250A%2520%2520src%253D%2522..%252Fassets%252Fresponsive-image.jpg%2522%250A%2520%2520alt%253D%2522responsive-image%2522%250A%252F%253E"
+            style="
+              width: 100%;
+              height: 438px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -187,12 +205,15 @@
       <section class="list-of-contents">
         <span class="h3 mb-2 pb-2">On This Page</span>
         <ul class="content-list">
-          <li class="content-item"><a href="#badges">Badges</a></li>
+          <li class="content-item"><a href="#image">Image</a></li>
           <li class="content-item">
-            <a href="#avatar_badges">Avatar Badges</a>
+            <a href="#responsive_image">Responsive Image</a>
           </li>
           <li class="content-item">
-            <a href="#icon_badges">Icon Badges</a>
+            <a href="#circular_image">Circular Image</a>
+          </li>
+          <li class="content-item">
+            <a href="#images_with_different_sizes">Image With Different Size</a>
           </li>
         </ul>
       </section>
