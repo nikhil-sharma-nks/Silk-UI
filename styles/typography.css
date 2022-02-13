@@ -52,3 +52,11 @@
   font-size: 8px;
   line-height: 1rem;
 }
+
+.text-grey {
+  color: var(--text-grey);
+}
+
+.text-centered {
+  text-align: center;
+}
