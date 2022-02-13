@@ -1,22 +1,54 @@
 .h1 {
   font-size: 3rem;
   line-height: 4rem;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
 }
 
 .h2 {
   font-size: 2rem;
   line-height: 2.5rem;
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-bold);
 }
 
 .h3 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: var(--font-regular);
+  font-weight: var(--font-semi-bold);
 }
 
 .h4 {
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: var(--font-regular);
+}
+
+.h5 {
+  font-size: 8px;
+  line-height: 1rem;
+  font-weight: var(--font-light);
+}
+
+.text-xxl {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.text-l {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-m {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-s {
+  font-size: 8px;
+  line-height: 1rem;
 }
