@@ -11,20 +11,49 @@
       crossorigin="anonymous"
     />
     <title>Buttons | Silk-UI</title>
+    <meta
+    name="description"
+    content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
+  />
+  <meta name="author" content="Nikhil Sharma" />
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="/components/button.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
   </head>
   <body>
     <nav class="navbar-container">
       <div class="navbar">
         <div class="navbar-header">
+          <img
+            src="../assets/nav-logo.png"
+            alt="library logo"
+            class="nav-logo"
+          />
           <a href="/">Silk UI</a>
         </div>
         <div class="navigation-links">
           <ul class="links-container">
-            <li class="link">Home</li>
-            <li class="link current-page">Documentation</li>
-            <li class="link">Installation</li>
+            <a
+              href="../index.html"
+            >
+              <button class="btn btn-secondary">
+                <i class="fas fa-home mr-2"></i>Home
+              </button>
+            </a>
+            <a
+              href="https://github.com/nikhil-sharma-nks/Silk-UI"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-github mr-2"></i>Github
+              </button>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/nikhil-sharma-nks/"              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn</button>
+              </button>
+            </a>
           </ul>
         </div>
       </div>
@@ -34,10 +63,10 @@
         <div class="component-drawer-header py-3">Getting Started</div>
         <ul>
           <li class="component-item">
-            <a class="component-link" href="/">Introduction</a>
+            <a class="component-link  " href="/introduction.html">Introduction</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Installation</a>
+            <a class="component-link " href="/installation.html">Installation</a>
           </li>
         </ul>
         <div class="component-drawer-header py-3">Components</div>
@@ -59,40 +88,26 @@
             >
           </li>
           <li class="component-item">
-            <a class="component-link" href="./card.html">Card</a>
+            <a class="component-link" href="/components/card.html">Card</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="./image.html">Images</a>
+            <a class="component-link" href="/components/image.html">Images</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="./input.html">Input</a>
+            <a class="component-link" href="/components/input.html">Input</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Test Utilities</a>
+            <a class="component-link" href="/components/text.html"
+              >Test Utilities</a
+            >
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Lists</a>
+            <a class="component-link" href="/components/list.html">Lists</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Modal</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Rating</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Toast</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Simplified Grid</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Slider</a>
+            <a class="component-link" href="/components/navigation.html"
+              >Navigation</a
+            >
           </li>
         </ul>
       </aside>
@@ -244,6 +259,84 @@
           >
           </iframe>
         </div>
+        <div class="h2 mt-5" id="link_button">
+          <a href="#link_button"> Link Button</a>
+        </div>
+        <div class="regular-text-container">
+          Link buttons are used when we want the user to navigate to a different
+          page. Here we use anchor tag to do this job. Add the destination in
+          href tag. You can make any button a link button like this, use it with
+          regular, large, outlined and button with icons as well.
+        </div>
+        <div class="example-container flex-row">
+          <a href="#link_button">
+            <button class="btn btn-primary-outlined">Primary</button>
+          </a>
+          <a href="#link_button">
+            <button class="btn btn-secondary">Secondary</button>
+          </a>
+          <a href="#link_button">
+            <button class="btn btn-success">
+              <i class="far fa-check-circle mr-1"></i>Success
+            </button>
+          </a>
+          <a href="#link_button">
+            <button class="btn btn-warning btn-large">
+              <i class="fas fa-exclamation-triangle mr-1"></i>
+              Warning
+            </button>
+          </a>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523link_button%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253EPrimary%253C%252Fbutton%253E%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523link_button%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523link_button%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-check-circle%2520mr-1%2522%253E%253C%252Fi%253ESuccess%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523link_button%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-large%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520mr-1%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520Warning%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fa%253E"
+            style="
+              width: 100%;
+              height: 488px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="floating_action_button">
+          <a href="#floating_action_button"> Floating Action Buttons</a>
+        </div>
+        <div class="regular-text-container">
+          A floating action button (FAB) represents the primary action of a
+          screen. It is a circular button with icon enclosed in it. Add
+          "btn-floating" to get a floating action button.
+        </div>
+        <div class="example-container flex-row">
+          <button class="btn btn-primary btn-floating">
+            <i class="fas fa-location-arrow fa-2x"></i>
+          </button>
+          <button class="btn btn-primary btn-floating">
+            <i class="fas fa-plus fa-2x"></i>
+          </button>
+          <button class="btn btn-success-outlined btn-floating">
+            <i class="fas fa-user-plus fa-2x"></i>
+          </button>
+          <button class="btn btn-error-outlined btn-floating">
+            <i class="fas fa-video-slash fa-2x"></i>
+          </button>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-floating%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-location-arrow%2520fa-2x%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-floating%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2520fa-2x%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success-outlined%2520btn-floating%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user-plus%2520fa-2x%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error-outlined%2520btn-floating%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-video-slash%2520fa-2x%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+            style="
+              width: 100%;
+              height: 362px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
       </section>
       <section class="list-of-contents">
         <span class="h3 mb-2 pb-2">On This Page</span>
@@ -260,6 +353,12 @@
           </li>
           <li class="content-item">
             <a href="#large_buttons">Large Buttons </a>
+          </li>
+          <li class="content-item">
+            <a href="#link_button">Link Button </a>
+          </li>
+          <li class="content-item">
+            <a href="#floating_action_button">Floating Action Button </a>
           </li>
         </ul>
       </section>

@@ -12,19 +12,43 @@
     />
     <title>Image | Silk-UI</title>
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="/components/image.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
   </head>
   <body>
     <nav class="navbar-container">
       <div class="navbar">
         <div class="navbar-header">
+          <img
+            src="../assets/nav-logo.png"
+            alt="library logo"
+            class="nav-logo"
+          />
           <a href="/">Silk UI</a>
         </div>
         <div class="navigation-links">
           <ul class="links-container">
-            <li class="link">Home</li>
-            <li class="link current-page">Documentation</li>
-            <li class="link">Installation</li>
+            <a
+              href="../index.html"
+            >
+              <button class="btn btn-secondary">
+                <i class="fas fa-home mr-2"></i>Home
+              </button>
+            </a>
+            <a
+              href="https://github.com/nikhil-sharma-nks/Silk-UI"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-github mr-2"></i>Github
+              </button>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/nikhil-sharma-nks/"              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn</button>
+              </button>
+            </a>
           </ul>
         </div>
       </div>
@@ -34,10 +58,10 @@
         <div class="component-drawer-header py-3">Getting Started</div>
         <ul>
           <li class="component-item">
-            <a class="component-link" href="/">Introduction</a>
+            <a class="component-link  " href="/introduction.html">Introduction</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Installation</a>
+            <a class="component-link " href="/installation.html">Installation</a>
           </li>
         </ul>
         <div class="component-drawer-header py-3">Components</div>
@@ -57,41 +81,28 @@
           <li class="component-item">
             <a class="component-link" href="/components/card.html">Card</a>
           </li>
-
           <li class="component-item">
-            <a class="component-link current-component" href="./image.html"
+            <a
+              class="component-link current-component"
+              href="/components/image.html"
               >Images</a
             >
           </li>
           <li class="component-item">
-            <a class="component-link" href="./input.html">Input</a>
+            <a class="component-link" href="/components/input.html">Input</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Test Utilities</a>
+            <a class="component-link" href="/components/text.html"
+              >Test Utilities</a
+            >
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Lists</a>
+            <a class="component-link" href="/components/list.html">Lists</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Modal</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Rating</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Toast</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Simplified Grid</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Slider</a>
+            <a class="component-link" href="/components/navigation.html"
+              >Navigation</a
+            >
           </li>
         </ul>
       </aside>

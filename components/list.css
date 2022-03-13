@@ -15,10 +15,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-/* .list-container .list-item:last-child {
-    border-bottom: unset;
-  } */
-
 .list-container .list-item:hover {
   background-color: var(--primary-color);
   cursor: pointer;

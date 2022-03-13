@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Silk UI</title>
     <meta name="referrer" content="strict-origin" />
+    <meta
+      name="description"
+      content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
+    />
+    <meta name="author" content="Nikhil Sharma" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -13,92 +18,67 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
   </head>
   <body>
     <nav class="navbar-container">
       <div class="navbar">
-        <div class="navbar-header">Silk UI</div>
+        <div class="navbar-header">
+          <img
+            src="../assets/nav-logo.png"
+            alt="library logo"
+            class="nav-logo"
+          />
+          <a href="/">Silk UI</a>
+        </div>
         <div class="navigation-links">
           <ul class="links-container">
-            <li class="link">Home</li>
-            <li class="link current-page">Documentation</li>
-            <li class="link">Installation</li>
+            <a
+              href="https://github.com/nikhil-sharma-nks/Silk-UI"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-github mr-2"></i>Github
+              </button>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/nikhil-sharma-nks/"              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn</button>
+              </button>
+            </a>
           </ul>
         </div>
       </div>
     </nav>
-    <main class="main-content">
-      <aside class="component-drawer">
-        <div class="component-drawer-header py-3">Getting Started</div>
-        <ul>
-          <li class="component-item">
-            <a class="component-link" href="/">Introduction</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Installation</a>
-          </li>
-        </ul>
-        <div class="component-drawer-header py-3">Components</div>
-        <ul>
-          <li class="component-item">
-            <a class="component-link" href="/components/avatar.html">Avatar</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/alert.html">Alert</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/badge.html">Badge</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/button.html">Button</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/card.html">Card</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/image.html">Images</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/input.html">Input</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/text.html"
-              >Test Utilities</a
-            >
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/lists.html">Lists</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/components/navigation.html"
-              >Navigation</a
-            >
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Modal</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Rating</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Toast</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Simplified Grid</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Slider</a>
-          </li>
-        </ul>
-      </aside>
-      <section class="content"></section>
+    <main class="intro-content">
+      <div class="intoduction-container">
+        <img src="./assets/hero-img.svg" alt="" class="hero-img" />
+        <div class="intro-text text-centered">
+          <p class="text-xxl text-centered mt-2">SILK UI</p>
+          <p class="text-l text-centered mt-2">
+            Silk UI is a light weight UI component library to help you create
+            trendy and modern looking websites quickly. It's easy to use and
+            even easier to integrate with your project.
+          </p>
+          <div class="btn-container mt-4">
+            <a href="./introduction.html">
+              <button class="btn btn-primary btn-large mr-4">
+                Get Started
+              </button>
+            </a>
+            <a href="./components/avatar.html">
+              <button class="btn btn-primary-outlined btn-large">
+                Documentation
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer-text">Made with ❤ by Nikhil <br /></p>
-
       <div class="social">
         <a href="https://www.linkedin.com/in/nikhil-sharma-nks/" target="_blank"
           ><i class="fab fa-linkedin fa-2x"></i

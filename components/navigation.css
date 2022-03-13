@@ -1,6 +1,3 @@
-@import './button.css';
-@import './badge.css';
-@import './input.css';
 .navigationbar-container {
   box-shadow: 12px 12px 20px 2px rgba(0, 0, 0, 0.2);
   height: 4rem;

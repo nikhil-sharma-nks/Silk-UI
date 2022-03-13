@@ -11,20 +11,49 @@
       crossorigin="anonymous"
     />
     <title>Text Utilities | Silk-UI</title>
+    <meta
+    name="description"
+    content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
+  />
+  <meta name="author" content="Nikhil Sharma" />
     <link rel="stylesheet" href="../styles/main.css" />
-    <!-- <link rel="stylesheet" href="/components/list.css" /> -->
+    <link rel="stylesheet" href="../styles/components.css" />
   </head>
   <body>
     <nav class="navbar-container">
       <div class="navbar">
         <div class="navbar-header">
+          <img
+            src="../assets/nav-logo.png"
+            alt="library logo"
+            class="nav-logo"
+          />
           <a href="/">Silk UI</a>
         </div>
         <div class="navigation-links">
           <ul class="links-container">
-            <li class="link">Home</li>
-            <li class="link current-page">Documentation</li>
-            <li class="link">Installation</li>
+            <a
+              href="../index.html"
+            >
+              <button class="btn btn-secondary">
+                <i class="fas fa-home mr-2"></i>Home
+              </button>
+            </a>
+            <a
+              href="https://github.com/nikhil-sharma-nks/Silk-UI"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-github mr-2"></i>Github
+              </button>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/nikhil-sharma-nks/"              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn</button>
+              </button>
+            </a>
           </ul>
         </div>
       </div>
@@ -34,10 +63,10 @@
         <div class="component-drawer-header py-3">Getting Started</div>
         <ul>
           <li class="component-item">
-            <a class="component-link" href="/">Introduction</a>
+            <a class="component-link  " href="/introduction.html">Introduction</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Installation</a>
+            <a class="component-link " href="/installation.html">Installation</a>
           </li>
         </ul>
         <div class="component-drawer-header py-3">Components</div>
@@ -57,44 +86,26 @@
           <li class="component-item">
             <a class="component-link" href="/components/card.html">Card</a>
           </li>
-
           <li class="component-item">
-            <a class="component-link" href="./image.html">Images</a>
+            <a class="component-link" href="/components/image.html">Images</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="./input.html">Input</a>
+            <a class="component-link" href="/components/input.html">Input</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="./text.html">Test Utilities</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="./list.html">Lists</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="./navigation.html">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link current-component" href="./text.html"
-              >Text Utilities</a
+            <a
+              class="component-link current-component"
+              href="/components/text.html"
+              >Test Utilities</a
             >
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Modal</a>
+            <a class="component-link" href="/components/list.html">Lists</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/">Rating</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Toast</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Simplified Grid</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Navigation</a>
-          </li>
-          <li class="component-item">
-            <a class="component-link" href="/">Slider</a>
+            <a class="component-link" href="/components/navigation.html"
+              >Navigation</a
+            >
           </li>
         </ul>
       </aside>
@@ -111,7 +122,9 @@
         <div class="h2 mt-5" id="heading_text">
           <a href="#heading_text">Heading Text</a>
         </div>
-        <div class="regular-text-container">
+        <div 
+        class="regular-text-container"
+        >
           Silk UI provide 5 different types of heading text. From h1 to h5. h1
           being the largest and h4 being the smallest with decreasinf
           font=weight
@@ -122,7 +135,9 @@
           <p class="h3">Heading-3</p>
           <p class="h4">Heading-4</p>
           <p class="h5">Heading-5</p>
+
         </div>
+
         <div class="code-container">
           <iframe
             src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=16.5px&lh=120%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522h1%2522%253EHeading-1%253C%252Fp%253E%250A%253Cp%2520class%253D%2522h2%2522%253EHeading-2%253C%252Fp%253E%250A%253Cp%2520class%253D%2522h3%2522%253EHeading-3%253C%252Fp%253E%250A%253Cp%2520class%253D%2522h4%2522%253EHeading-4%253C%252Fp%253E%250A%253Cp%2520class%253D%2522h5%2522%253EHeading-5%253C%252Fp%253E"
@@ -177,10 +192,10 @@
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=16.5px&lh=120%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-xxl%2522%253EText-XXL%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-xl%2522%253EText-XL%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-l%2522%253EText-L%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-m%2522%253EText-M%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-s%2522%253EText-S%253C%252Fp%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-xl%2520text-grey%2522%253EThis%2520Is%2520A%2520Grey%2520Text%253C%252Fp%253E%250A"
             style="
               width: 100%;
-              height: 173px;
+              height: 108px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -201,10 +216,10 @@
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=16.5px&lh=120%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-xxl%2522%253EText-XXL%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-xl%2522%253EText-XL%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-l%2522%253EText-L%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-m%2522%253EText-M%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-s%2522%253EText-S%253C%252Fp%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-xl%2520text-centered%2522%253EThis%2520Is%2520A%2520Centered%2520Text%253C%252Fp%253E%250A"
             style="
               width: 100%;
-              height: 173px;
+              height: 108px;
               border: 0;
               transform: scale(1);
               overflow: hidden;

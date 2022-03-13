@@ -4,7 +4,6 @@
   background: unset;
   border: none;
   cursor: pointer;
-  /* font-weight:  */
   font-size: 1rem;
   border-radius: 5px;
 }
@@ -69,4 +68,9 @@
 .btn-large {
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
+}
+
+.btn-floating {
+  border-radius: 50%;
+  padding: 1rem;
 }
