@@ -12,10 +12,10 @@
     />
     <title>Lists | Silk-UI</title>
     <meta
-    name="description"
-    content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
-  />
-  <meta name="author" content="Nikhil Sharma" />
+      name="description"
+      content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
+    />
+    <meta name="author" content="Nikhil Sharma" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/components.css" />
   </head>
@@ -32,9 +32,7 @@
         </div>
         <div class="navigation-links">
           <ul class="links-container">
-            <a
-              href="../index.html"
-            >
+            <a href="../index.html">
               <button class="btn btn-secondary">
                 <i class="fas fa-home mr-2"></i>Home
               </button>
@@ -48,10 +46,11 @@
               </button>
             </a>
             <a
-            href="https://www.linkedin.com/in/nikhil-sharma-nks/"              target="_blank"
+              href="https://www.linkedin.com/in/nikhil-sharma-nks/"
+              target="_blank"
             >
               <button class="btn btn-secondary">
-                <i class="fab fa-linkedin mr-2"></i>LinkedIn</button>
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn
               </button>
             </a>
           </ul>
@@ -63,10 +62,10 @@
         <div class="component-drawer-header py-3">Getting Started</div>
         <ul>
           <li class="component-item">
-            <a class="component-link  " href="/introduction.html">Introduction</a>
+            <a class="component-link" href="/introduction.html">Introduction</a>
           </li>
           <li class="component-item">
-            <a class="component-link " href="/installation.html">Installation</a>
+            <a class="component-link" href="/installation.html">Installation</a>
           </li>
         </ul>
         <div class="component-drawer-header py-3">Components</div>
@@ -127,19 +126,67 @@
           A stacked list would have no space between its list items.
         </div>
         <div class="example-container flex-row">
-          <div class="list-container">
-            <div class="list-item">Item Item- 1</div>
-            <div class="list-item">Item Item- 2</div>
-            <div class="list-item">Item Item- 3</div>
-            <div class="list-item">Item Item- 4</div>
+          <div class="list-container-stacked">
+            <div class="list-item">
+              <div class="list-header">
+                <img
+                  class="avatar avatar-small"
+                  src="../assets/avatar-01.jpg"
+                />
+                <p class="text-l pl-3">Nikhil</p>
+              </div>
+              <div class="header-content mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                error.
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="list-header">
+                <img
+                  class="avatar avatar-small"
+                  src="../assets/avatar-02.jpg"
+                />
+                <p class="text-l pl-3">Dhoni</p>
+              </div>
+              <div class="header-content mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                error.
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="list-header">
+                <img
+                  class="avatar avatar-small"
+                  src="../assets/avatar-03.jpg"
+                />
+                <p class="text-l pl-3">Virat</p>
+              </div>
+              <div class="header-content mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                error.
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="list-header">
+                <img
+                  class="avatar avatar-small"
+                  src="../assets/avatar-04.jpg"
+                />
+                <p class="text-l pl-3">Ajinkiya</p>
+              </div>
+              <div class="header-content mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                error.
+              </div>
+            </div>
           </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=16.5px&lh=120%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522list-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253EItem%2520Item-%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253EItem%2520Item-%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253EItem%2520Item-%25203%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253EItem%2520Item-%25204%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522list-container-stacked%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522..%252Fassets%252Favatar-01.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-l%2520pl-3%2522%253ENikhil%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520In%252C%2520error.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522..%252Fassets%252Favatar-02.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-l%2520pl-3%2522%253EDhoni%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520In%252C%2520error.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522..%252Fassets%252Favatar-03.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-l%2520pl-3%2522%253EVirat%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520In%252C%2520error.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522..%252Fassets%252Favatar-04.jpg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-l%2520pl-3%2522%253EAjinkiya%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522header-content%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520In%252C%2520error.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 193px;
+              height: 1021px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
