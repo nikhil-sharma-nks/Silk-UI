@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Modal | Silk-UI</title>
+    <meta
+      name="description"
+      content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
+    />
+    <meta name="author" content="Nikhil Sharma" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+  </head>
+
+  <body>
+    <nav class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <img
+            src="../assets/nav-logo.png"
+            alt="library logo"
+            class="nav-logo"
+          />
+          <a href="/">Silk UI</a>
+        </div>
+        <div class="navigation-links">
+          <ul class="links-container">
+            <a href="../index.html">
+              <button class="btn btn-secondary">
+                <i class="fas fa-home mr-2"></i>Home
+              </button>
+            </a>
+            <a
+              href="https://github.com/nikhil-sharma-nks/Silk-UI"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-github mr-2"></i>Github
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nikhil-sharma-nks/"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+              </button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content">
+      <aside class="component-drawer">
+        <div class="component-drawer-header py-3">Getting Started</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/introduction.html">Introduction</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/installation.html">Installation</a>
+          </li>
+        </ul>
+        <div class="component-drawer-header py-3">Components</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/components/alert.html">Alert</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/avatar.html">Avatar</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/badge.html">Badge</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/button.html">Button</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/card.html">Card</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/image.html">Images</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/input.html">Input</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/list.html">Lists</a>
+          </li>
+          <li class="component-item">
+            <a
+              class="component-link current-component"
+              href="/components/modal.html"
+              >Modal</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/navigation.html"
+              >Navigation</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/text.html"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <section class="content">
+        <div class="component-heading">
+          <div class="h1" id="modal">
+            <a href="#modal">Modal</a>
+          </div>
+        </div>
+        <div class="component-description">
+          A modal is a web page element that displays in front of and
+          deactivates all other page content. it is a popup box that is
+          displayed on top of current website. To return to the main content,
+          the user must engage with the modal by completing an action or by
+          closing it.
+        </div>
+        <div class="h2 mt-5" id="simple_modal">
+          <a href="#simple_modal">Simple Modal</a>
+        </div>
+        <div class="regular-text-container">
+          A simple modal would consists of a modal header which has a title of
+          the modal. A modal body which packs up the content of modal. And the
+          modal footer which consists of some CTA.
+        </div>
+        <div class="example-container flex-col">
+          <div>
+            <button class="btn btn-primary" id="live-modal-btn">
+              Live Demo
+            </button>
+          </div>
+          <div class="modal-backdrop-container">
+            <div class="modal simple-modal">
+              <div class="modal-header">
+                <p class="h2">Modal-Header</p>
+                <i class="fa-solid fa-xmark fa-2x modal-close-btn"></i>
+              </div>
+              <div class="modal-content my-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                iste laudantium repellat nemo reiciendis fugit cum aut qui.
+                Error corrupti inventore unde ut, nesciunt at consequuntur
+                obcaecati perspiciatis quis sapiente ab reprehenderit
+                repellendus soluta esse fuga voluptatibus dolore totam dolor.
+              </div>
+              <div class="modal-footer">
+                <div class="modal-button-container">
+                  <button class="btn btn-primary">Accept</button>
+                  <button class="btn btn-error modal-close-btn">Decline</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-backdrop-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal%2520simple-modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2522%253EModal-Header%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-2x%2520modal-close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2520my-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Unde%2520iste%250A%2520%2520%2520%2520%2520%2520laudantium%2520repellat%2520nemo%2520reiciendis%2520fugit%2520cum%2520aut%2520qui.%2520Error%2520corrupti%250A%2520%2520%2520%2520%2520%2520inventore%2520unde%2520ut%252C%2520nesciunt%2520at%2520consequuntur%2520obcaecati%2520perspiciatis%2520quis%250A%2520%2520%2520%2520%2520%2520sapiente%2520ab%2520reprehenderit%2520repellendus%2520soluta%2520esse%2520fuga%2520voluptatibus%2520dolore%250A%2520%2520%2520%2520%2520%2520totam%2520dolor.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-button-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-error%2520modal-close-btn%2522%253EDecline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 590px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="javascript_for_modal">
+          <a href="#javascript_for_modal">Javascript For Modal</a>
+        </div>
+        <div class="regular-text-container">
+          Add the following javascript code in the script tag to make the
+          opening and closing of modal work.
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=766&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cscript%253E%250A%2520%2520const%2520demoBtn%2520%253D%2520document.getElementById%28%27live-modal-btn%27%29%253B%250A%2520%2520const%2520modalContainer%2520%253D%2520document.querySelector%28%27.modal-backdrop-container%27%29%253B%250A%2520%2520const%2520closeBtn%2520%253D%2520document.querySelector%28%27.modal-close-btn%27%29%253B%250A%250A%2520%2520closeBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalContainer.style.display%2520%253D%2520%27none%27%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520demoBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalContainer.style.display%2520%253D%2520%27block%27%253B%250A%2520%2520%257D%29%253B%250A%253C%252Fscript%253E"
+            style="
+              width: 100%;
+              height: 429px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="list-of-contents">
+        <span class="h3 mb-2 pb-2">On This Page</span>
+        <ul class="content-list">
+          <li class="content-item">
+            <a href="#modal">Modal</a>
+          </li>
+          <li class="content-item">
+            <a href="#simple_modal">Simple Modal</a>
+          </li>
+          <li class="content-item">
+            <a href="#javascript_for_modal">Javascript For Modal</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Made with ❤ by Nikhil <br /></p>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nikhil-sharma-nks/" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a href="https://github.com/nikhil-sharma-nks" target="_blank"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/wannabe_nikhil" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.facebook.com/nikhilshawarma/" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/nikhil.shawarma/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      const demoBtn = document.getElementById('live-modal-btn');
+      const modalContainer = document.querySelector(
+        '.modal-backdrop-container'
+      );
+      const closeBtn = document.querySelectorAll('.modal-close-btn');
+      closeBtn.forEach((btn) =>
+        btn.addEventListener('click', () => {
+          modalContainer.style.display = 'none';
+        })
+      );
+      demoBtn.addEventListener('click', () => {
+        modalContainer.style.display = 'block';
+      });
+    </script>
+  </body>
+</html>
