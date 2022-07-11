@@ -14,8 +14,8 @@ href="https://silk-ui.netlify.app/styles/components.css" />
 ```
 Add this into link tag of Font Awesome in head section of your html. 
 ```sh
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 crossorigin="anonymous" referrerpolicy="no-referrer" />
 ```
 
@@ -58,9 +58,29 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 - Cards with shadow
 - Cards with dismiss
 
+### Grid
+- Grid-2: two items in a grid
+- Grid-3: three items in a grid
+
 ### [Image](https://silk-ui.netlify.app/components/image.html)
 - Form Input
 - Input with feedback
+
+### [Lists](https://silk-ui.netlify.app/components/list.html)
+- Stacked List
+- Spaced Lists
+- List with Icons
+
+### Modal
+- Simple Modal
+
+### [Navigation](https://silk-ui.netlify.app/components/navigation.html)
+- Simple Navigation
+- Navigation With Buttons
+- Navigation With Searchbox
+
+### Rating
+- Simple Star Rating
 
 ### [Text Utilities](https://silk-ui.netlify.app/components/text.html)
 - Heading Text
@@ -68,15 +88,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 - Grey Text
 - Centered Text
 
-### [Lists](https://silk-ui.netlify.app/components/list.html)
-- Stacked List
-- Spaced Lists
-- List with Icons
-
-### [Navigation](https://silk-ui.netlify.app/components/navigation.html)
-- Simple Navigation
-- Navigation With Buttons
-- Navigation With Searchbox
-
+### Toast
+- Simple Toast
 
 

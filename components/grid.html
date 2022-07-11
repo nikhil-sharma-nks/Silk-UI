@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Modal | Silk-UI</title>
+    <title>Grid | Silk-UI</title>
     <meta
       name="description"
       content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
@@ -88,7 +88,11 @@
             <a class="component-link" href="/components/card.html">Card</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/components/grid.html">Grid</a>
+            <a
+              class="component-link current-component"
+              href="/components/grid.html"
+              >Grid</a
+            >
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/image.html">Images</a>
@@ -100,11 +104,7 @@
             <a class="component-link" href="/components/list.html">Lists</a>
           </li>
           <li class="component-item">
-            <a
-              class="component-link current-component"
-              href="/components/modal.html"
-              >Modal</a
-            >
+            <a class="component-link" href="/components/modal.html">Modal</a>
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/navigation.html"
@@ -126,59 +126,36 @@
       </aside>
       <section class="content">
         <div class="component-heading">
-          <div class="h1" id="modal">
-            <a href="#modal">Modal</a>
+          <div class="h1" id="grid">
+            <a href="#grid">Grid</a>
           </div>
         </div>
         <div class="component-description">
-          A modal is a web page element that displays in front of and
-          deactivates all other page content. it is a popup box that is
-          displayed on top of current website. To return to the main content,
-          the user must engage with the modal by completing an action or by
-          closing it.
+          A grid is a collection of horizontal and vertical lines creating a
+          pattern against which we can line up our design elements. They help us
+          to create layouts in which our elements won't jump around or change
+          width as we move from page to page, providing greater consistency on
+          our websites.
         </div>
-        <div class="h2 mt-5" id="simple_modal">
-          <a href="#simple_modal">Simple Modal</a>
+        <div class="h2 mt-5" id="grid_2_col">
+          <a href="#grid_2_col">Grid With Two Columns</a>
         </div>
         <div class="regular-text-container">
-          A simple modal would consists of a modal header which has a title of
-          the modal. A modal body which packs up the content of modal. And the
-          modal footer which consists of some CTA.
+          Using "grid-col-2" class would divide the container into two equal
+          parts and you can use these columns as per your needs.
         </div>
         <div class="example-container flex-col">
-          <div>
-            <button class="btn btn-primary" id="live-modal-btn">
-              Live Demo
-            </button>
-          </div>
-          <div class="modal-backdrop-container">
-            <div class="modal simple-modal">
-              <div class="modal-header">
-                <p class="h2">Modal-Header</p>
-                <i class="fa-solid fa-xmark fa-2x modal-close-btn"></i>
-              </div>
-              <div class="modal-content my-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-                iste laudantium repellat nemo reiciendis fugit cum aut qui.
-                Error corrupti inventore unde ut, nesciunt at consequuntur
-                obcaecati perspiciatis quis sapiente ab reprehenderit
-                repellendus soluta esse fuga voluptatibus dolore totam dolor.
-              </div>
-              <div class="modal-footer">
-                <div class="modal-button-container">
-                  <button class="btn btn-primary">Accept</button>
-                  <button class="btn btn-error modal-close-btn">Decline</button>
-                </div>
-              </div>
-            </div>
+          <div class="grid grid-col-2">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
           </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-backdrop-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal%2520simple-modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2522%253EModal-Header%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-2x%2520modal-close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2520my-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Unde%2520iste%250A%2520%2520%2520%2520%2520%2520laudantium%2520repellat%2520nemo%2520reiciendis%2520fugit%2520cum%2520aut%2520qui.%2520Error%2520corrupti%250A%2520%2520%2520%2520%2520%2520inventore%2520unde%2520ut%252C%2520nesciunt%2520at%2520consequuntur%2520obcaecati%2520perspiciatis%2520quis%250A%2520%2520%2520%2520%2520%2520sapiente%2520ab%2520reprehenderit%2520repellendus%2520soluta%2520esse%2520fuga%2520voluptatibus%2520dolore%250A%2520%2520%2520%2520%2520%2520totam%2520dolor.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-button-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-error%2520modal-close-btn%2522%253EDecline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-2%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 590px;
+              height: 176px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -187,19 +164,26 @@
           >
           </iframe>
         </div>
-        <div class="h2 mt-5" id="javascript_for_modal">
-          <a href="#javascript_for_modal">Javascript For Modal</a>
+        <div class="h2 mt-5" id="grid_3_col">
+          <a href="#grid_3_col">Grid With 3 Columns</a>
         </div>
         <div class="regular-text-container">
-          Add the following javascript code in the script tag to make the
-          opening and closing of modal work.
+          Using "grid-col-3" class would divide the container into three equal
+          parts and you can use these columns as per your needs.
+        </div>
+        <div class="example-container flex-col">
+          <div class="grid grid-col-3">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
+            <div class="grid-item">Grid Item - 3</div>
+          </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=766&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cscript%253E%250A%2520%2520const%2520demoBtn%2520%253D%2520document.getElementById%28%27live-modal-btn%27%29%253B%250A%2520%2520const%2520modalContainer%2520%253D%2520document.querySelector%28%27.modal-backdrop-container%27%29%253B%250A%2520%2520const%2520closeBtn%2520%253D%2520document.querySelector%28%27.modal-close-btn%27%29%253B%250A%250A%2520%2520closeBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalContainer.style.display%2520%253D%2520%27none%27%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520demoBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalContainer.style.display%2520%253D%2520%27block%27%253B%250A%2520%2520%257D%29%253B%250A%253C%252Fscript%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 429px;
+              height: 201px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -213,13 +197,13 @@
         <span class="h3 mb-2 pb-2">On This Page</span>
         <ul class="content-list">
           <li class="content-item">
-            <a href="#modal">Modal</a>
+            <a href="#grid">Grid</a>
           </li>
           <li class="content-item">
-            <a href="#simple_modal">Simple Modal</a>
+            <a href="#grid_2_col">Grid With 2 Columns</a>
           </li>
           <li class="content-item">
-            <a href="#javascript_for_modal">Javascript For Modal</a>
+            <a href="#grid_3_col">Grid With 3 Columns</a>
           </li>
         </ul>
       </section>
@@ -245,20 +229,15 @@
         ></a>
       </div>
     </footer>
-
     <script>
-      const demoBtn = document.getElementById('live-modal-btn');
-      const modalContainer = document.querySelector(
-        '.modal-backdrop-container'
-      );
-      const closeBtn = document.querySelectorAll('.modal-close-btn');
-      closeBtn.forEach((btn) =>
-        btn.addEventListener('click', () => {
-          modalContainer.style.display = 'none';
-        })
-      );
+      const demoBtn = document.getElementById('live-toast-btn');
+      const cancelBtn = document.querySelector('.toast-close-btn');
+      const toast = document.querySelector('.toast-container');
       demoBtn.addEventListener('click', () => {
-        modalContainer.style.display = 'block';
+        toast.style.display = 'block';
+      });
+      cancelBtn.addEventListener('click', () => {
+        toast.style.display = 'none';
       });
     </script>
   </body>
