@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Toast | Silk-UI</title>
+    <title>Grid | Silk-UI</title>
     <meta
       name="description"
       content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
@@ -88,7 +88,11 @@
             <a class="component-link" href="/components/card.html">Card</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/components/grid.html">Grid</a>
+            <a
+              class="component-link current-component"
+              href="/components/grid.html"
+              >Grid</a
+            >
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/image.html">Images</a>
@@ -116,55 +120,42 @@
             >
           </li>
           <li class="component-item">
-            <a
-              class="component-link current-component"
-              href="/components/toast.html"
-              >Toast</a
-            >
+            <a class="component-link" href="/components/toast.html">Toast</a>
           </li>
         </ul>
       </aside>
       <section class="content">
         <div class="component-heading">
-          <div class="h1" id="toast">
-            <a href="#toast">Toast</a>
+          <div class="h1" id="grid">
+            <a href="#grid">Grid</a>
           </div>
         </div>
         <div class="component-description">
-          Toasts are non-interactive, passive, and asynchronous short messages
-          for users. Generally they are used as an interface feedback pattern
-          for informing the user about the results of an action.
+          A grid is a collection of horizontal and vertical lines creating a
+          pattern against which we can line up our design elements. They help us
+          to create layouts in which our elements won't jump around or change
+          width as we move from page to page, providing greater consistency on
+          our websites.
         </div>
-        <div class="h2 mt-5" id="simple_toast">
-          <a href="#simple_toast">Simple Toast</a>
+        <div class="h2 mt-5" id="grid_2_col">
+          <a href="#grid_2_col">Grid With Two Columns</a>
         </div>
         <div class="regular-text-container">
-          A simple toast would consists of a feedback message along with a
-          dismiss icon button
+          Using "grid-col-2" class would divide the container into two equal
+          parts and you can use these columns as per your needs.
         </div>
         <div class="example-container flex-col">
-          <div>
-            <button class="btn btn-primary" id="live-toast-btn">
-              Live Demo
-            </button>
-          </div>
-          <div class="toast-container">
-            <div class="toast-header">
-              <p class="text-l">Attention Required</p>
-              <i class="fa-solid fa-xmark toast-close-btn"></i>
-            </div>
-            <div class="toast-message mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, dignissimos?
-            </div>
+          <div class="grid grid-col-2">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
           </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=679&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-header%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-l%2522%253EAttention%2520Required%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520toast-close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-message%2520mt-2%2522%253E%250A%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Excepturi%252C%250A%2520%2520%2520%2520dignissimos%253F%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-2%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 362px;
+              height: 176px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -173,19 +164,26 @@
           >
           </iframe>
         </div>
-        <div class="h2 mt-5" id="javascript_for_toast">
-          <a href="#javascript_for_toast">Javascript For Toast</a>
+        <div class="h2 mt-5" id="grid_3_col">
+          <a href="#grid_3_col">Grid With 3 Columns</a>
         </div>
         <div class="regular-text-container">
-          Add the following javascript code in the script tag to make the
-          opening and closing of toast work.
+          Using "grid-col-3" class would divide the container into three equal
+          parts and you can use these columns as per your needs.
+        </div>
+        <div class="example-container flex-col">
+          <div class="grid grid-col-3">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
+            <div class="grid-item">Grid Item - 3</div>
+          </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=679&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cscript%253E%250A%2520%2520const%2520demoBtn%2520%253D%2520document.getElementById%28%27live-toast-btn%27%29%253B%250A%2520%2520const%2520cancelBtn%2520%253D%2520document.querySelector%28%27.toast-close-btn%27%29%253B%250A%2520%2520const%2520toast%2520%253D%2520document.querySelector%28%27.toast-container%27%29%253B%250A%2520%2520demoBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toast.style.display%2520%253D%2520%27block%27%253B%250A%2520%2520%257D%29%253B%250A%2520%2520cancelBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toast.style.display%2520%253D%2520%27none%27%253B%250A%2520%2520%257D%29%253B%250A%253C%252Fscript%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 387px;
+              height: 201px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -199,13 +197,13 @@
         <span class="h3 mb-2 pb-2">On This Page</span>
         <ul class="content-list">
           <li class="content-item">
-            <a href="#toast">Toast</a>
+            <a href="#grid">Grid</a>
           </li>
           <li class="content-item">
-            <a href="#simple_toast">Simple Toast</a>
+            <a href="#grid_2_col">Grid With 2 Columns</a>
           </li>
           <li class="content-item">
-            <a href="#javascript_for_toast">Javascript For Toast</a>
+            <a href="#grid_3_col">Grid With 3 Columns</a>
           </li>
         </ul>
       </section>

@@ -5,6 +5,8 @@
   height: 4rem;
   z-index: 2;
   border-radius: 0 0 10px 10px;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-container .navbar {
@@ -50,7 +52,7 @@
   overflow: auto;
   height: calc(100vh - 4rem);
   position: sticky;
-  top: 0;
+  top: 4rem;
 }
 
 .main-content .component-drawer .component-item {
