@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Grid | Silk-UI</title>
+    <meta
+      name="description"
+      content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
+    />
+    <meta name="author" content="Nikhil Sharma" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+  </head>
+
+  <body>
+    <nav class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <img
+            src="../assets/nav-logo.png"
+            alt="library logo"
+            class="nav-logo"
+          />
+          <a href="/">Silk UI</a>
+        </div>
+        <div class="navigation-links">
+          <ul class="links-container">
+            <a href="../index.html">
+              <button class="btn btn-secondary">
+                <i class="fas fa-home mr-2"></i>Home
+              </button>
+            </a>
+            <a
+              href="https://github.com/nikhil-sharma-nks/Silk-UI"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-github mr-2"></i>Github
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nikhil-sharma-nks/"
+              target="_blank"
+            >
+              <button class="btn btn-secondary">
+                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+              </button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content">
+      <aside class="component-drawer">
+        <div class="component-drawer-header py-3">Getting Started</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/introduction.html">Introduction</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/installation.html">Installation</a>
+          </li>
+        </ul>
+        <div class="component-drawer-header py-3">Components</div>
+        <ul>
+          <li class="component-item">
+            <a class="component-link" href="/components/alert.html">Alert</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/avatar.html">Avatar</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/badge.html">Badge</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/button.html">Button</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/card.html">Card</a>
+          </li>
+          <li class="component-item">
+            <a
+              class="component-link current-component"
+              href="/components/grid.html"
+              >Grid</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/image.html">Images</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/input.html">Input</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/list.html">Lists</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/modal.html">Modal</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/navigation.html"
+              >Navigation</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/rating.html">Rating</a>
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/text.html"
+              >Text Utilities</a
+            >
+          </li>
+          <li class="component-item">
+            <a class="component-link" href="/components/toast.html">Toast</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="content">
+        <div class="component-heading">
+          <div class="h1" id="grid">
+            <a href="#grid">Grid</a>
+          </div>
+        </div>
+        <div class="component-description">
+          A grid is a collection of horizontal and vertical lines creating a
+          pattern against which we can line up our design elements. They help us
+          to create layouts in which our elements won't jump around or change
+          width as we move from page to page, providing greater consistency on
+          our websites.
+        </div>
+        <div class="h2 mt-5" id="grid_2_col">
+          <a href="#grid_2_col">Grid With Two Columns</a>
+        </div>
+        <div class="regular-text-container">
+          Using "grid-col-2" class would divide the container into two equal
+          parts and you can use these columns as per your needs.
+        </div>
+        <div class="example-container flex-col">
+          <div class="grid grid-col-2">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-2%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 176px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <div class="h2 mt-5" id="grid_3_col">
+          <a href="#grid_3_col">Grid With 3 Columns</a>
+        </div>
+        <div class="regular-text-container">
+          Using "grid-col-3" class would divide the container into three equal
+          parts and you can use these columns as per your needs.
+        </div>
+        <div class="example-container flex-col">
+          <div class="grid grid-col-3">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
+            <div class="grid-item">Grid Item - 3</div>
+          </div>
+        </div>
+        <div class="code-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 201px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+      <section class="list-of-contents">
+        <span class="h3 mb-2 pb-2">On This Page</span>
+        <ul class="content-list">
+          <li class="content-item">
+            <a href="#grid">Grid</a>
+          </li>
+          <li class="content-item">
+            <a href="#grid_2_col">Grid With 2 Columns</a>
+          </li>
+          <li class="content-item">
+            <a href="#grid_3_col">Grid With 3 Columns</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Made with ❤ by Nikhil <br /></p>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nikhil-sharma-nks/" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a href="https://github.com/nikhil-sharma-nks" target="_blank"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/wannabe_nikhil" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.facebook.com/nikhilshawarma/" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/nikhil.shawarma/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+    <script>
+      const demoBtn = document.getElementById('live-toast-btn');
+      const cancelBtn = document.querySelector('.toast-close-btn');
+      const toast = document.querySelector('.toast-container');
+      demoBtn.addEventListener('click', () => {
+        toast.style.display = 'block';
+      });
+      cancelBtn.addEventListener('click', () => {
+        toast.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
