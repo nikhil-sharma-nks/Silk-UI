@@ -1,0 +1,11 @@
+.simple-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-rating {
+  cursor: pointer;
+}
+.star-rating-checked {
+  color: var(--warning);
+}
