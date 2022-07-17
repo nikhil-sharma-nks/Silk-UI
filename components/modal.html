@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Badge | Silk-UI</title>
+    <title>Modal | Silk-UI</title>
     <meta
       name="description"
       content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/components.css" />
   </head>
+
   <body>
     <nav class="navbar-container">
       <div class="navbar">
@@ -78,11 +79,7 @@
             <a class="component-link" href="/components/avatar.html">Avatar</a>
           </li>
           <li class="component-item">
-            <a
-              class="component-link current-component"
-              href="/components/badge.html"
-              >Badge</a
-            >
+            <a class="component-link" href="/components/badge.html">Badge</a>
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/button.html">Button</a>
@@ -99,12 +96,15 @@
           <li class="component-item">
             <a class="component-link" href="/components/input.html">Input</a>
           </li>
-
           <li class="component-item">
             <a class="component-link" href="/components/list.html">Lists</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/components/modal.html">Modal</a>
+            <a
+              class="component-link current-component"
+              href="/components/modal.html"
+              >Modal</a
+            >
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/navigation.html"
@@ -126,48 +126,59 @@
       </aside>
       <section class="content">
         <div class="component-heading">
-          <div class="h1" id="badges">
-            <a href="#badges">Badges</a>
+          <div class="h1" id="modal">
+            <a href="#modal">Modal</a>
           </div>
         </div>
         <div class="component-description">
-          Badges are simple and basic components that are used to display an
-          indicator or count a number.
+          A modal is a web page element that displays in front of and
+          deactivates all other page content. it is a popup box that is
+          displayed on top of current website. To return to the main content,
+          the user must engage with the modal by completing an action or by
+          closing it.
         </div>
-        <div class="h2 mt-5" id="avatar_badges">
-          <a href="#avatar_badges">Avatar Badges</a>
+        <div class="h2 mt-5" id="simple_modal">
+          <a href="#simple_modal">Simple Modal</a>
         </div>
         <div class="regular-text-container">
-          Use avatars along with badges to display more details like count or
-          status like online or offline. Use only "badge" class to display
-          number as badge and use "badge-offline" and "badge-online" to display
-          status. You can use it with both regular rectangular and circular
-          avatar
+          A simple modal would consists of a modal header which has a title of
+          the modal. A modal body which packs up the content of modal. And the
+          modal footer which consists of some CTA.
         </div>
-        <div class="example-container flex-row">
-          <div class="badge-container">
-            <img class="avatar" src="../assets/avatar-01.jpg" />
-            <span class="badge">9</span>
+        <div class="example-container flex-col">
+          <div>
+            <button class="btn btn-primary" id="live-modal-btn">
+              Live Demo
+            </button>
           </div>
-          <div class="badge-container">
-            <img class="avatar avatar-circular" src="../assets/avatar-02.jpg" />
-            <span class="badge">4</span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar" src="../assets/avatar-03.jpg" />
-            <span class="badge badge-offline"></span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar avatar-circular" src="../assets/avatar-04.jpg" />
-            <span class="badge badge-online"></span>
+          <div class="modal-backdrop-container">
+            <div class="modal simple-modal">
+              <div class="modal-header">
+                <p class="h2">Modal-Header</p>
+                <i class="fa-solid fa-xmark fa-2x modal-close-btn"></i>
+              </div>
+              <div class="modal-content my-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                iste laudantium repellat nemo reiciendis fugit cum aut qui.
+                Error corrupti inventore unde ut, nesciunt at consequuntur
+                obcaecati perspiciatis quis sapiente ab reprehenderit
+                repellendus soluta esse fuga voluptatibus dolore totam dolor.
+              </div>
+              <div class="modal-footer">
+                <div class="modal-button-container">
+                  <button class="btn btn-primary">Accept</button>
+                  <button class="btn btn-error modal-close-btn">Decline</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fassets%252Favatar-01.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E9%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-circular%2522%2520src%253D%2522..%252Fassets%252Favatar-02.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fassets%252Favatar-03.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-circular%2522%2520src%253D%2522..%252Fassets%252Favatar-04.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-backdrop-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal%2520simple-modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2522%253EModal-Header%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520fa-2x%2520modal-close-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2520my-2%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Unde%2520iste%250A%2520%2520%2520%2520%2520%2520laudantium%2520repellat%2520nemo%2520reiciendis%2520fugit%2520cum%2520aut%2520qui.%2520Error%2520corrupti%250A%2520%2520%2520%2520%2520%2520inventore%2520unde%2520ut%252C%2520nesciunt%2520at%2520consequuntur%2520obcaecati%2520perspiciatis%2520quis%250A%2520%2520%2520%2520%2520%2520sapiente%2520ab%2520reprehenderit%2520repellendus%2520soluta%2520esse%2520fuga%2520voluptatibus%2520dolore%250A%2520%2520%2520%2520%2520%2520totam%2520dolor.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-button-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-error%2520modal-close-btn%2522%253EDecline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 525px;
+              height: 590px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -176,37 +187,19 @@
           >
           </iframe>
         </div>
-
-        <div class="h2 mt-5" id="icon_badges">
-          <a href="#icon_badges">Icon Badges</a>
+        <div class="h2 mt-5" id="javascript_for_modal">
+          <a href="#javascript_for_modal">Javascript For Modal</a>
         </div>
         <div class="regular-text-container">
-          Use "badge-icon" class to display badges on icons!
-        </div>
-        <div class="example-container flex-row">
-          <div class="badge-container">
-            <i class="fas fa-envelope"></i>
-            <span class="badge badge-icon">9</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="badge badge-icon">5</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-heart"> </i>
-            <span class="badge badge-icon">5</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-flag"></i>
-            <span class="badge badge-icon">6</span>
-          </div>
+          Add the following javascript code in the script tag to make the
+          opening and closing of modal work.
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=16.5px&lh=120%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522example-container%2520flex-row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E9%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E5%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E5%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-flag%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E6%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=766&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cscript%253E%250A%2520%2520const%2520demoBtn%2520%253D%2520document.getElementById%28%27live-modal-btn%27%29%253B%250A%2520%2520const%2520modalContainer%2520%253D%2520document.querySelector%28%27.modal-backdrop-container%27%29%253B%250A%2520%2520const%2520closeBtn%2520%253D%2520document.querySelector%28%27.modal-close-btn%27%29%253B%250A%250A%2520%2520closeBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalContainer.style.display%2520%253D%2520%27none%27%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520demoBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520modalContainer.style.display%2520%253D%2520%27block%27%253B%250A%2520%2520%257D%29%253B%250A%253C%252Fscript%253E"
             style="
               width: 100%;
-              height: 430px;
+              height: 429px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -219,12 +212,14 @@
       <section class="list-of-contents">
         <span class="h3 mb-2 pb-2">On This Page</span>
         <ul class="content-list">
-          <li class="content-item"><a href="#badges">Badges</a></li>
           <li class="content-item">
-            <a href="#avatar_badges">Avatar Badges</a>
+            <a href="#modal">Modal</a>
           </li>
           <li class="content-item">
-            <a href="#icon_badges">Icon Badges</a>
+            <a href="#simple_modal">Simple Modal</a>
+          </li>
+          <li class="content-item">
+            <a href="#javascript_for_modal">Javascript For Modal</a>
           </li>
         </ul>
       </section>
@@ -250,5 +245,21 @@
         ></a>
       </div>
     </footer>
+
+    <script>
+      const demoBtn = document.getElementById('live-modal-btn');
+      const modalContainer = document.querySelector(
+        '.modal-backdrop-container'
+      );
+      const closeBtn = document.querySelectorAll('.modal-close-btn');
+      closeBtn.forEach((btn) =>
+        btn.addEventListener('click', () => {
+          modalContainer.style.display = 'none';
+        })
+      );
+      demoBtn.addEventListener('click', () => {
+        modalContainer.style.display = 'block';
+      });
+    </script>
   </body>
 </html>
