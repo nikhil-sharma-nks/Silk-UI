@@ -7,7 +7,12 @@
 @import '../components/badge.css';
 @import '../components/button.css';
 @import '../components/card.css';
+@import '../components/grid.css';
 @import '../components/image.css';
 @import '../components/input.css';
 @import '../components/list.css';
+@import '../components/modal.css';
 @import '../components/navigation.css';
+@import '../components//rating.css';
+@import '../components/toast.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';

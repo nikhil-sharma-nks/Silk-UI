@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Badge | Silk-UI</title>
+    <title>Grid | Silk-UI</title>
     <meta
       name="description"
       content="Silk UI, a light weight UI component library to help you create trendy and modern looking websites quickly"
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/components.css" />
   </head>
+
   <body>
     <nav class="navbar-container">
       <div class="navbar">
@@ -78,11 +79,7 @@
             <a class="component-link" href="/components/avatar.html">Avatar</a>
           </li>
           <li class="component-item">
-            <a
-              class="component-link current-component"
-              href="/components/badge.html"
-              >Badge</a
-            >
+            <a class="component-link" href="/components/badge.html">Badge</a>
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/button.html">Button</a>
@@ -91,7 +88,11 @@
             <a class="component-link" href="/components/card.html">Card</a>
           </li>
           <li class="component-item">
-            <a class="component-link" href="/components/grid.html">Grid</a>
+            <a
+              class="component-link current-component"
+              href="/components/grid.html"
+              >Grid</a
+            >
           </li>
           <li class="component-item">
             <a class="component-link" href="/components/image.html">Images</a>
@@ -99,7 +100,6 @@
           <li class="component-item">
             <a class="component-link" href="/components/input.html">Input</a>
           </li>
-
           <li class="component-item">
             <a class="component-link" href="/components/list.html">Lists</a>
           </li>
@@ -126,48 +126,36 @@
       </aside>
       <section class="content">
         <div class="component-heading">
-          <div class="h1" id="badges">
-            <a href="#badges">Badges</a>
+          <div class="h1" id="grid">
+            <a href="#grid">Grid</a>
           </div>
         </div>
         <div class="component-description">
-          Badges are simple and basic components that are used to display an
-          indicator or count a number.
+          A grid is a collection of horizontal and vertical lines creating a
+          pattern against which we can line up our design elements. They help us
+          to create layouts in which our elements won't jump around or change
+          width as we move from page to page, providing greater consistency on
+          our websites.
         </div>
-        <div class="h2 mt-5" id="avatar_badges">
-          <a href="#avatar_badges">Avatar Badges</a>
+        <div class="h2 mt-5" id="grid_2_col">
+          <a href="#grid_2_col">Grid With Two Columns</a>
         </div>
         <div class="regular-text-container">
-          Use avatars along with badges to display more details like count or
-          status like online or offline. Use only "badge" class to display
-          number as badge and use "badge-offline" and "badge-online" to display
-          status. You can use it with both regular rectangular and circular
-          avatar
+          Using "grid-col-2" class would divide the container into two equal
+          parts and you can use these columns as per your needs.
         </div>
-        <div class="example-container flex-row">
-          <div class="badge-container">
-            <img class="avatar" src="../assets/avatar-01.jpg" />
-            <span class="badge">9</span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar avatar-circular" src="../assets/avatar-02.jpg" />
-            <span class="badge">4</span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar" src="../assets/avatar-03.jpg" />
-            <span class="badge badge-offline"></span>
-          </div>
-          <div class="badge-container">
-            <img class="avatar avatar-circular" src="../assets/avatar-04.jpg" />
-            <span class="badge badge-online"></span>
+        <div class="example-container flex-col">
+          <div class="grid grid-col-2">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
           </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fassets%252Favatar-01.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E9%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-circular%2522%2520src%253D%2522..%252Fassets%252Favatar-02.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fassets%252Favatar-03.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-circular%2522%2520src%253D%2522..%252Fassets%252Favatar-04.jpg%2522%2520%252F%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-2%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 525px;
+              height: 176px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -176,37 +164,26 @@
           >
           </iframe>
         </div>
-
-        <div class="h2 mt-5" id="icon_badges">
-          <a href="#icon_badges">Icon Badges</a>
+        <div class="h2 mt-5" id="grid_3_col">
+          <a href="#grid_3_col">Grid With 3 Columns</a>
         </div>
         <div class="regular-text-container">
-          Use "badge-icon" class to display badges on icons!
+          Using "grid-col-3" class would divide the container into three equal
+          parts and you can use these columns as per your needs.
         </div>
-        <div class="example-container flex-row">
-          <div class="badge-container">
-            <i class="fas fa-envelope"></i>
-            <span class="badge badge-icon">9</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="badge badge-icon">5</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-heart"> </i>
-            <span class="badge badge-icon">5</span>
-          </div>
-          <div class="badge-container">
-            <i class="fas fa-flag"></i>
-            <span class="badge badge-icon">6</span>
+        <div class="example-container flex-col">
+          <div class="grid grid-col-3">
+            <div class="grid-item">Grid Item - 1</div>
+            <div class="grid-item">Grid Item - 2</div>
+            <div class="grid-item">Grid Item - 3</div>
           </div>
         </div>
         <div class="code-container">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=16.5px&lh=120%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522example-container%2520flex-row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E9%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E5%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E5%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-flag%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E6%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=yeti&wt=sharp&l=javascript&width=558&ds=false&dsyoff=100px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=18px&lh=141%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-col-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253EGrid%2520Item%2520-%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
             style="
               width: 100%;
-              height: 430px;
+              height: 201px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -219,12 +196,14 @@
       <section class="list-of-contents">
         <span class="h3 mb-2 pb-2">On This Page</span>
         <ul class="content-list">
-          <li class="content-item"><a href="#badges">Badges</a></li>
           <li class="content-item">
-            <a href="#avatar_badges">Avatar Badges</a>
+            <a href="#grid">Grid</a>
           </li>
           <li class="content-item">
-            <a href="#icon_badges">Icon Badges</a>
+            <a href="#grid_2_col">Grid With 2 Columns</a>
+          </li>
+          <li class="content-item">
+            <a href="#grid_3_col">Grid With 3 Columns</a>
           </li>
         </ul>
       </section>
@@ -250,5 +229,16 @@
         ></a>
       </div>
     </footer>
+    <script>
+      const demoBtn = document.getElementById('live-toast-btn');
+      const cancelBtn = document.querySelector('.toast-close-btn');
+      const toast = document.querySelector('.toast-container');
+      demoBtn.addEventListener('click', () => {
+        toast.style.display = 'block';
+      });
+      cancelBtn.addEventListener('click', () => {
+        toast.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
